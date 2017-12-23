@@ -1,0 +1,14 @@
+{
+    "cmsName": "货帮",
+    "version": "guokai",
+    "author": "songc",
+    "homePage": "/CargoA/index.html",
+    "server": "Java",
+    "dataBase": "mysql",
+    "maxUpload": "Html",
+    "userRights": "总管理员",
+    "description": "11",
+    "powerby": "copyright @2017",
+    "record": "京ICP备14040xxx号-1",
+    "keywords": "layui"
+}

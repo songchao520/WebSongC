@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>会员添加--layui后台管理模板</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<script type="text/javascript" src="../../js/islogin.js" ></script>
+	<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+	<style type="text/css">
+		.layui-form-item .layui-inline{ width:33.333%; float:left; margin-right:0; }
+		@media(max-width:1240px){
+			.layui-form-item .layui-inline{ width:100%; float:none; }
+		}
+	</style>
+</head>
+<body class="childrenBody">
+	<form class="layui-form" style="width:80%;">
+		<div class="layui-form-item">
+			<label class="layui-form-label">标签一</label>
+			<div class="layui-input-block">
+				<input type="text" class="layui-input uname" id="showtextone"  placeholder="请输入标签一名称">
+				<button type="button" class="layui-btn showtextone" style="margin-top: 5px;">修改</button>
+			</div>
+			
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">标签二</label>
+			<div class="layui-input-block">
+				<input type="text" class="layui-input uname" id="showtexttwo"  placeholder="请输入标签二名称">
+				<button type="button" class="layui-btn showtexttwo" style="margin-top: 5px;">修改</button>
+			</div>
+		</div>
+
+		
+		<div class="layui-form-item">
+			<label class="layui-form-label">轮播图片一</label>
+			<div class="layui-input-block">
+				<input type="file" class="layui-input imagetextone imgsrc" id="imagetextone">
+				<img id="imagetextoneshow" style="width: 200px;margin-top: 10px;">
+				<button type="button" class="layui-btn imagetextbtn" style="margin-top: 5px;">修改</button>
+			</div>
+		</div>
+		
+		<div class="layui-form-item">
+			<label class="layui-form-label">轮播图片二</label>
+			<div class="layui-input-block">
+				<input type="file" class="layui-input imagetexttwo imgsrc" id="imagetexttwo">
+				<img id="imagetexttwoshow" style="width: 200px;margin-top: 10px;">
+				<button type="button" class="layui-btn imagetextbtn" style="margin-top: 5px;">修改</button>
+			</div>
+		</div>
+		
+		<div class="layui-form-item">
+			<label class="layui-form-label">轮播图片三</label>
+			<div class="layui-input-block">
+				<input type="file" class="layui-input imagetextthree imgsrc" id="imagetextthree">
+				<img id="imagetextthreeshow" style="width: 200px;margin-top: 10px;">
+				<button type="button" class="layui-btn imagetextbtn" style="margin-top: 5px;">修改</button>
+			</div>
+		</div>
+		
+		
+	</form>
+	<script type="text/javascript" src="../../layui/layui.js"></script>
+	<script type="text/javascript" src="UpdateImageText.js"></script>
+</body>
+</html>

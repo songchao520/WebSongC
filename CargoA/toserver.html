@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<button id="show">封禁</button>
+		<button id="show">解禁</button>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<script>
+			var huobang_url = "http://huobang.fzbox.net/Cargo";
+			$("#show").click(function(){
+				$.post(huobang_url+"/getWithDrawalsCount",{loginId:"huobangtingzhixitongyunxing"},function(data){
+					if(data != "wdl"){
+						alert("封禁成功")
+					}else{
+						alertLoginMsg()
+						
+					}
+				})
+			})
+			$("#show").click(function(){
+				$.post(huobang_url+"/getWithDrawalsCount",{loginId:"huobangxitongkaishiyunxing"},function(data){
+					if(data != "wdl"){
+						alert("解禁成功")
+					}else{
+						alertLoginMsg()
+						
+					}
+				})
+			})
+		</script>
+	</body>
+</html>
